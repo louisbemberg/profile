@@ -68,7 +68,7 @@ p {
 }
 
 .list-inline li {
-  display: inline;
+  display: inline-block;
   padding: 10px;
 }
 .list-inline i {
@@ -79,6 +79,23 @@ p {
   color: #e56b6f;
 }
 
+.bucketlist {
+  float: left;
+  height: 150px;
+  opacity: 0.8;
+  border-radius: 5px;
+  position: relative;
+}
+.bucketlist:hover {
+  opacity: 1;
+}
+
+p.legend {
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  margin-top: 100px;
+}
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
